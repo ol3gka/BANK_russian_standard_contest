@@ -1,0 +1,18 @@
+-- Задача 4.
+-- 1) 0.99953767914933
+select cast(count(DISTINCT(CLIENT_ID)) as real)/count(CLIENT_ID)  
+from appl
+-- 2) 
+select cast(sum(Target) as real)/count(Target), EDUCATION
+from appl
+GROUP BY EDUCATION
+ORDER BY EDUCATION
+-- 3) 1359.1519690721834
+WITH p1 as (select AVG(PROFIT_FAMILY)
+from appl
+WHERE CLIENT_ID% 2 = 0
+UNION
+select AVG(PROFIT_FAMILY)
+from appl
+WHERE CLIENT_ID% 2 != 0)
+select lag("AVG(PROFIT_FAMILY)", -1) OVER (ORDER BY "AVG(PROFIT_FAMILY)") - "AVG(PROFIT_FAMILY)" from p1 limit 1
