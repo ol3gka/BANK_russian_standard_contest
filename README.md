@@ -1,0 +1,1 @@
+# BANK_russian_standard_contest
