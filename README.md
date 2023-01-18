@@ -19,7 +19,13 @@ BANK_russian_standard.ipynb, BANK_russian_standard.html
 SQL_skript.txt
 ```
 
-Скрины с выводом решения подзадач 2 и 3 ("Задача 4.") соответственно:
+Скрины с выводом решения (численный ответ) подзадач 1,2 и 3 ("Задача 4.") соответственно:
+<!-- #region -->
+<p align="center">
+<img  src="pictures/ta1.png">
+</p>
+
+
 <!-- #region -->
 <p align="center">
 <img  src="pictures/ta2.png">
